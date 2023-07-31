@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Doações PJT - Faça a diferença!</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="front-header">
+        <h1 class="title">Centro de Doações PJT</h1>
+
+        <br>
+
+        <h2 class="title">Faça a doação para a instituição desejada:</h2>
+        <form id="form-doacao">
+            <input type="text" id="nome-inst" required placeholder="Nome da instituição" />
+            <input type="number" id="numero-inst" required placeholder="Número da instituição beneficiária" />
+            <p class="error-message">
+                O Nome completo e o Número da instituição, precisam ser informados!
+            </p>
+            <input type="number" id="valor-doacao" required placeholder="Valor" />
+            <textarea placeholder="Descrição (opcional)" id="descricao"></textarea>
+            <button id="btn-doar" type="submit">Doar</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
